@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitação de Férias</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Solicitação de Férias</h2>
+    <form>
+      <div class="form-group">
+        <label for="colaborador">Colaborador</label>
+        <input type="text" id="colaborador" placeholder="Digite o nome do colaborador">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="data">Data</label>
+          <input type="date" id="data">
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <input type="text" id="status" placeholder="Digite o status">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="departamento">Departamento</label>
+          <input type="text" id="departamento" placeholder="Digite o departamento">
+        </div>
+        <div class="form-group">
+          <label for="centro-custo">Centro de Custo</label>
+          <input type="text" id="centro-custo" placeholder="Digite o centro de custo">
+        </div>
+        <div class="form-group">
+          <label for="unidade-negocio">Unidade de Negócio</label>
+          <input type="text" id="unidade-negocio" placeholder="Digite a unidade de negócio">
+        </div>
+      </div>
+      <fieldset>
+        <legend>Período Aquisitivo</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inicio">Início</label>
+            <input type="date" id="inicio">
+          </div>
+          <div class="form-group">
+            <label for="fim">Fim</label>
+            <input type="date" id="fim">
+          </div>
+          <div class="form-group">
+            <label for="dias-saldo">Dias de Saldo</label>
+            <input type="number" id="dias-saldo" placeholder="Digite os dias de saldo">
+          </div>
+          <div class="form-group">
+            <label for="limite">Limite</label>
+            <input type="date" id="limite">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Férias</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inicio-ferias">Início das Férias</label>
+            <input type="date" id="inicio-ferias">
+          </div>
+          <div class="form-group">
+            <label for="final-ferias">Final das Férias</label>
+            <input type="date" id="final-ferias">
+          </div>
+          <div class="form-group">
+            <label for="abono">Abono</label>
+            <input type="number" id="abono" placeholder="Digite o abono">
+          </div>
+          <div class="form-group">
+            <label for="parcela-decimo">1ª Parc. do 13º Salário</label>
+            <select id="parcela-decimo">
+              <option value="Sim">Sim</option>
+              <option value="Não">Não</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <p class="aviso">
+        <strong>AVISO:</strong> Entregue a Carteira de Trabalho e Previdência Social do Funcionário na Adm. de Pessoal para anotações de férias.
+      </p>
+    </form>
+  </div>
+</body>
+</html>
